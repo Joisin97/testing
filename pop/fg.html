@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./systel/dok.css">
+    <script src="script/kol.js"></script>
+    <title>Login</title>
+</head>
+<div class="body-container">
+    <div class="card-box">
+      <div class="login-container">
+        
+<body style="margin: 0; padding: 0;">
+    <img src="asset/kokk.jpg" alt="Background" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+
+    <div class="card-box">
+        <div class="login-container">
+            <div class="login-form">
+                <h2 style="color :rgb(135, 130, 130)">login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username" style="color:rgb(182, 182, 182)">Username:</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" style="color: azure;">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button onclick="myFunction()" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="description">
+            <h3 style="color: rgb(255, 255, 255);">BATMAN</h3>
+            <h4 style="color: rgb(255, 255, 255);">Batman is a fictional superhero appearing in American comic books published by DC Comics
+            </h4>
+            <p id="date" style="color:azure">Today's Date: <span id="currentDate"></span></p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            alert("Login");
+        }
+        document.getElementById('currentDate').textContent = new Date().toLocaleDateString();
+    </script>
+    <script src="./script/kol.js"></script>
+</body>
+</html>
